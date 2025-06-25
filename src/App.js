@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from 'react';
+import '@n8n/chat/style.css';
+import { createChat } from '@n8n/chat';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	useEffect(() => {
+		createChat({
+			webhookUrl: 'https://n8n-service-igq5.onrender.com/webhook/b0d85d81-950e-4b47-b7b7-d76ef25cb390/chat',
+      defaultLanguage: 'pl',
+      initialMessages: ['powiedz jaki rodzaj kredytu i na jaką kwotę wziąłeś?']
+		});
+	}, []);
 
+	return (<div></div>);
+};
 export default App;
