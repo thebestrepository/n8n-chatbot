@@ -20,7 +20,7 @@ const App = () => {
       defaultLanguage: 'en',
       initialMessages: [
         'Witaj! 👋',
-        'Jestem Przemek. Pomogę Ci dowiedzieć się o potencjalnych ogromnych kwotach jakie mozesz uzyskać w formie odszkodowania od banku?',
+        'Jestem Przemek. Pomogę Ci dowiedzieć się o potencjalnych kwotach jakie mozesz uzyskać w formie odszkodowania od banku?',
         'Powiedz jaki kredyt zaciągnąłeś?'
       ],
       i18n: {
